@@ -117,6 +117,37 @@ When a Player joins, the Server will send all of its Exteriors to the Client, if
 If you don't know how to make a mod and result to a Server Datapack and Resourcepack, the Clients will _need_ your Resourcepack in order to Render the TARDIS Exterior, otherwise its an ID Mismatch.
 =====
 ====
+.*Pulses*
+[%collapsible]
+=======
+TardisPulses controll how the Demat/Remat animation look like.
+The *TardisBlockEntity* contains a float called "*pulses*", this float is used to calculate the alpha during Animation. +
+For the lights, *lightPulses* exist.
+The pulse ID is stored inside TardisData, so a player can choose which Pulse they want to use. +
+
+To add a new TardisPulse, you need to implement *ITardisPulse*
+
+[source,java]
+----
+public class DefaultTardisPulse implements ITardisPulse {
+    @Override
+    public void pulse(TardisBlockEntity tardisBlockEntity, TardisData data, long tickTime, TardisBuilder builder, World world, BlockPos pos) {
+        defaultHandler(tardisBlockEntity, data, tickTime, builder, world, pos);
+
+        if(tardisBlockEntity.getState() != TardisState.NEUTRAL) {
+            tardisBlockEntity.pulses = (float) (1 - tardisBlockEntity.dematTime + MathHelper.cos(tardisBlockEntity.dematTime * 3.141592f * 10) * 0.25f * MathHelper.sin(tardisBlockEntity.dematTime * 3.141592f));
+            tardisBlockEntity.lightPulses = tardisBlockEntity.pulses;
+        }
+    }
+}
+----
+Example Pulse class. +
+Your custom Pulse can be registered using our Registry *DMRegistry.TARDIS_PULSES: +
+[source,java]
+----
+Registry.register(DMRegistry.TARDIS_PULSES, id, pulse_class);
+----
+=======
 == Sonics
 
 == Styling
