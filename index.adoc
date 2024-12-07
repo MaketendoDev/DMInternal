@@ -1,9 +1,16 @@
-= Dalek Mod 1.21.3 Internal Wiki
+++++
+<div style="background-color: black; width: 100%; height: 50px; position: fixed; top: 0; left: 0; z-index: 1000;">
+</div>
+<div style="display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0;">
+    <img src="image/wiki_logo.png" alt="Dalek Mod 1.21.3 Internal Wiki" style="max-width: 50%; max-height: 50%; object-fit: contain;">
+</div>
+++++
+
 Internal Stuff for Addon Creators and DM Dev Team regarding Dalek Mod Fabric 1.21.3
 Code Sections managed by Jayson; Style by Ginger
 :source-highlighter: coderay
 
-image::ginger_moment.png[alt="Ginger Moment", width=50%, height=50%]
+image::images/ginger_moment.png[alt="Ginger Moment", width=50%, height=50%]
 
 == Addons
 Addons for Dalek Mod are allowed, but we would like that any Addon follows these Guidelines and also these special cases: + 
@@ -213,7 +220,7 @@ The vanilla tracks create a sense of importance to moments that would otherwise 
 ====
 When designing a TARDIS interior to use in an addon, you should respect the limitations put in place. All interiors in the mod fit within a 64x64 area, equivalent to 4x4 chunks. +
 
-image::TARDIS Building Area.png[alt="X Axis: Red | Z Axis: Blue", width=50%, height=50%]
+image::images/tardis_building_area.png[alt="X Axis: Red | Z Axis: Blue", width=50%, height=50%]
 Red is the X Axis, while Blue denote the Z Axis. Each square is a chunk. +
 
 If designing a canon interior (one that has been in the show), you should aim to keep the styling consistent with the other canon interiors already in the mod. +
