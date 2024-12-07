@@ -3,7 +3,7 @@
 </div>
 
 <div style="position: fixed; top: -50px; left: 50%; transform: translateY(-200%); z-index: 1001;">
-    <img src="images/wiki_logo.png" alt="Dalek Mod 1.21.3 Internal Wiki" style="max-height: 750px; width: auto;">
+    <img src="images/wiki_logo.png" alt="Dalek Mod 1.21.3 Internal Wiki" style="max-height: 1750px; width: auto;">
 </div>
 
 <div style="margin-top: 60px;">
