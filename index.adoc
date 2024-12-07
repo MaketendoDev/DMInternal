@@ -1,6 +1,13 @@
 ++++
-<div style="background-color: #333333; width: 100%; height: 50px; position: fixed; top: 0; left: 0; z-index: 1000; display: flex; align-items: center; justify-content: center; padding-bottom: 5px;">
-    <img src="images/title_logo.png" alt="Dalek Mod 1.21.3 Internal Wiki" style="height: 100px; width: auto; object-fit: contain; margin-top: 10px;">
+<div style="background-color: #333333; width: 100%; height: 50px; position: fixed; top: 0; left: 0; z-index: 1000; display: flex; align-items: center; justify-content: center;">
+    <!-- Logo that stays fixed at the top -->
+    <img src="images/wiki_logo.png" alt="Dalek Mod 1.21.3 Internal Wiki" style="height: 100px; width: auto; object-fit: contain;">
+</div>
+<div style="margin-top: 60px;">
+    <!-- Main content below -->
+    <h1>Welcome to the Dalek Mod Wiki</h1>
+    <p>Internal Stuff for Addon Creators and DM Dev Team regarding Dalek Mod Fabric 1.21.3</p>
+    <p>Code Sections managed by Jayson; Style by Ginger</p>
 </div>
 ++++
 ----- You can't see this lololol ------
